@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "../Navbar/page";
+
 import { useState } from "react";
 export default function Login() {
 
@@ -13,15 +13,12 @@ export default function Login() {
   };
 
   return (
-    <div>
-      <Navbar />
-      <div className="bg-gray-500 my-5 ">
-        <h1 className="text-center text-2xl my-5">Login Page Data</h1>
 
+      <div className="bg-[#D2E8E3] my-5 ">
         <div className="flex h-screen items-center justify-center bg-[#D2E8E3]">
       <div className="w-full max-w-md p-6 bg-[#ECFBF4] shadow-md rounded-lg">
         <form onSubmit={handleSubmit}>
-          <h2 className="text-blue-400 text-2xl font-bold text-center mb-6">Login to Your Account</h2>
+          <h2 className="text-black text-2xl font-bold text-center mb-6">Login to Your Account</h2>
 
           <div className="mb-4">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -59,7 +56,7 @@ export default function Login() {
           </button>
 
           <div className="text-center mt-4">
-            <a href="#" className="text-sm text-blue-600 hover:underline">
+            <a href="#" className="text-sm text-black hover:underline">
               Forgot your password?
             </a>
           </div>
@@ -67,6 +64,6 @@ export default function Login() {
       </div>
     </div>
       </div>
-    </div>
+
   );
 }
