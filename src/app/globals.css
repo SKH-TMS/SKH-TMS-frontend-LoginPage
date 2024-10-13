@@ -10,9 +10,9 @@ write below line in your editor setting.json, if unknown error exist for @tailwi
 :root {
   --background: #D2E8E3;/*body-background, also-> navbar-link-color, button-text*/
   --foreground: black;/*text over website*/
-  --button-color: #0F6466; /*also-> navbar-link-hover, form-input-focus*/
+  --button-color: #0F6466; /*also-> navbar-link-hover, form-input-focus, buttonTiny-hover*/
   --form-color: #ECFBF4; /*form-background*/
-  --navbar-color: #2C3532; /*navbar-background, also-> button-hover*/
+  --navbar-color: #2C3532; /*navbar-background, also-> button-hover, buttonTiny*/
 }
 
 @media (prefers-color-scheme: dark) {/*Not properly check*/
@@ -52,6 +52,8 @@ button:hover{
   .formDiv{@apply w-full max-w-md p-6 shadow-2xl rounded-lg; background-color: var(--form-color)}
   .formLabel{@apply block text-sm font-medium text-gray-700}
   .formButton{@apply w-full py-2 px-4}
+  .buttonTiny{@apply m-1 p-1 text-xs rounded-sm; background-color: var(--navbar-color);}
+  .buttonTiny:hover{background-color: var(--button-color);}
 }
 @layer base {
   h1 {font-size:36px;padding: 36px;}
