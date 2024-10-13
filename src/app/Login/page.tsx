@@ -5,17 +5,11 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Frontend-only and no actual login functionality
-    console.log("Logging in with:", { email, password });
-  };
-
   return (
     <div>
       <div className="screenMiddleDiv">
         <div className="formDiv">
-          <form onSubmit={handleSubmit}>
+          <form>
             <h2 className="text-center">Login</h2>
 
             <div>
